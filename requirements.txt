@@ -1,0 +1,16 @@
+attrs==19.1.0
+boltons==19.1.0
+certifi==2019.6.16
+chardet==3.0.4
+Click==7.0
+face==19.1.2
+Flask==1.1.1
+glom==19.2.0
+gunicorn==19.9.0
+idna==2.8
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+requests==2.22.0
+urllib3==1.25.3
+Werkzeug==0.15.5
