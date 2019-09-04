@@ -1,14 +1,25 @@
+import os
+import logging
+
 from config.cf import CF
 from config.spring import ConfigClient
 
 from flask import Flask, escape, request, jsonify
 
+
+logger = logging.getLogger('gunicorn.error')
+logger.setLevel(logging.INFO)
+
+#logging.error(os.environ)
+
 cf = CF()
+cf.get_config()
 #cf = ConfigClient(
 #    app_name='configserver',
 #    branch='ft-sdintegracoes-591'
 #)
 #cf.get_config()
+
 
 app = Flask(__name__)
 
