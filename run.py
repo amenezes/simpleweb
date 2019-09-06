@@ -1,3 +1,5 @@
+import json
+
 from config.cf import CF
 
 from flask import Flask, escape, request
@@ -19,6 +21,7 @@ def hello():
 def config():
     return cf.config
 
+
 @app.route('/config-keys')
 def keys():
-    return cf.get_keys()
+    return json.dumps(list(cf.get_keys()))
