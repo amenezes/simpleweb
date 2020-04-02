@@ -8,11 +8,12 @@ An example application to show how integrate [Spring Cloud Config](https://sprin
 2. provision a `Config Server` service;
 3. clone this repo;
 4. inside `simpleweb` directory deploy the application: `cf push simpleweb000`
+5. bind application with service as: `cf bind-service simpleweb000 config-server`
 
 #### Endpoints available
 
 `/`
-Hello World
+Welcome to **simpleweb000**
 
 `/config`
 Show the configuration retrieved from Config Server.
